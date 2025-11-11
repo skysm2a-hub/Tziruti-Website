@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tziruti | מטבח ים תיכוני</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* CSS מותאם אישית (עיצוב ורספונסיביות) */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #E0F7FA 0%, #F5F5DC 100%); 
+            color: #333;
+            overflow-x: hidden;
+            text-align: right; 
+        }
+        .navbar {
+            background-color: #8FBC8F !important; /* Olive green */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .navbar-brand, .nav-link {
+            color: #F5F5DC !important; /* Beige */
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #DEB887 !important; /* Burlywood */
+        }
+        .about-section {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #FFFACD; 
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .about-section h2 {
+            color: #8FBC8F;
+            border-bottom: 2px solid #DEB887;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .about-section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .hero {
+            /* תמונת רקע גנרית בקישור ציבורי */
+            background: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&h=400&fit=crop') center/cover no-repeat;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #F5F5DC;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+            position: relative;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(47, 79, 79, 0.4); 
+            z-index: 1;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+            z-index: 2;
+            position: relative;
+            animation: fadeInUp 2s ease-out;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 250, 240, 0.95); 
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        .section-title {
+            color: #8FBC8F; 
+            border-bottom: 3px solid #DEB887; 
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .menu-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .flip-card {
+            background-color: transparent;
+            width: 300px;
+            height: 400px;
+            perspective: 1000px;
+            margin: 15px;
+            cursor: pointer;
+            text-align: right; 
+        }
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+        .flip-card.flipped .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            /* תמיכה בדפדפנים שונים */
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        .flip-card-front {
+            background: #FFFACD; 
+            border: 2px solid #DEB887; 
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .flip-card-back {
+            background: #FFFACD; 
+            border: 2px solid #DEB887; 
+            transform: rotateY(180deg);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            overflow-y: auto;
+        }
+        .flip-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .flip-card h3 {
+            color: #228B22; 
+            margin: 10px 0;
+            text-align: center;
+        }
+        .flip-card p {
+            font-size: 0.9em;
+            margin: 5px 0;
+            text-align: right;
+        }
+        .price {
+            font-weight: bold;
+            color: #CD853F; 
+            font-size: 1.3em;
+            margin-top: 10px;
+            text-align: center;
+        }
+        .ingredients, .explanation, .nutrition {
+            text-align: right;
+            margin: 10px 0;
+            font-size: 0.85em;
+        }
+        .nutrition ul {
+            list-style: none;
+            padding: 0;
+        }
+        .nutrition li {
+            margin: 5px 0;
+            border-bottom: 1px dotted #ccc;
+            padding-bottom: 3px;
+        }
+        .btn-reserve {
+            background-color: #DEB887; 
+            color: #4B0082; 
+            font-weight: bold;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            transition: background-color 0.3s, transform 0.3s;
+            margin-top: 15px;
+        }
+        .btn-reserve:hover {
+            background-color: #CD853F; 
+            transform: scale(1.05);
+            color: #4B0082;
+        }
+        footer {
+            background-color: #8FBC8F; 
+            color: #F5F5DC; 
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+        }
+        /* Media Queries לרספונסיביות מלאה */
+        @media (max-width: 768px) {
+            .hero {
+                height: 300px;
+            }
+            .hero h1 {
+                font-size: 2em;
+            }
+            .flip-card {
+                width: 90%; 
+                margin: 15px auto;
+            }
+        }
+        /* אנימציות */
+        @keyframes fadeInUp {
+             from { opacity: 0; transform: translateY(30px); }
+             to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideInDown {
+             from { transform: translateY(-100%); }
+             to { transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand animate__animated animate__bounce" href="#"><i class="fas fa-utensils"></i> צירוטי | Tziruti</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about"><i class="fas fa-info-circle"></i> אודות</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#appetizers"><i class="fas fa-seedling"></i> ראשונות</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mains"><i class="fas fa-drumstick-bite"></i> עיקריות</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#desserts"><i class="fas fa-ice-cream"></i> קינוחים</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#drinks"><i class="fas fa-glass-cheers"></i> שתייה</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact"><i class="fas fa-map-marker-alt"></i> צור קשר</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div>
+            <h1>ברוכים הבאים לצירוטי</h1>
+            <p>חוויה ים תיכונית קסומה. טריות, פשטות ואהבה בכל מנה.</p>
+            <div class="text-center">
+                <a href="mailto:reserve@tziruti.com" class="btn btn-reserve animate__animated animate__pulse animate__infinite">
+                    <i class="fas fa-calendar-alt"></i> הזמן שולחן
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        
+        <div id="about" class="about-section animate__animated animate__fadeInUp">
+            <h2>✨ אודות צירוטי</h2>
+            <p>
+                מסעדת **צירוטי** היא חלון לטעמים האותנטיים של הים התיכון. אנו מאמינים בשימוש בחומרי גלם מקומיים, טריים ובאיכות הגבוהה ביותר, שנקנים מדי יום מהשווקים. 
+                מכלים מטבחים כמו יוון, איטליה, המזרח התיכון וישראל, יצרנו תפריט שמחבר בין מסורת לחדשנות. בואו ליהנות מחוויה חמה, משפחתית וטעמים שלא ישכחו. 
+            </p>
+        </div>
+
+
+        <h2 id="appetizers" class="section-title">🥗 מנות ראשונות (Appetizers)</h2>
+        <div class="menu-section">
+            <div class="flip-card animate__animated animate__zoomIn" onclick="flipCard(this)">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?w=300&h=200&fit=crop" alt="Hummus">
+                        <h3>חומוס ביתי</h3>
+                        <p>חומוס קרמי עם טחינה, שמן זית, פטרוזיליה וגרגירים חמים.</p>
+                        <div class="price">₪25</div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>חומוס</h3>
+                        <div class="explanation"><strong>הסבר:</strong> מנה יום-יומית טחונה במקום. מוגש עם פיתה חמה וטרייה.</div>
+                        <div class="nutrition">
+                            <ul>
+                                <li>טבעוני 🌱</li>
+                                <li>עשיר בחלבון</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card animate__animated animate__zoomIn" onclick="flipCard(this)" style="animation-delay: 0.2s;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://images.unsplash.com/photo-1593001874117-c99c800e3eb7?w=300&h=200&fit=crop" alt="Falafel">
+                        <h3>פלאפל ירוק</h3>
+                        <p>כדורי חומוס מתובלים ומטוגנים, מוגש עם טחינה וסלסה חריפה.</p>
+                        <div class="price">₪30</div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>פלאפל</h3>
+                        <div class="explanation"><strong>הסבר:</strong> עשוי מחומוס ופטרוזיליה טרייה - קריספי מבחוץ ורך מבפנים. 6 יחידות.</div>
+                        <div class="nutrition">
+                            <ul>
+                                <li>טבעוני 🌱</li>
+                                <li>ללא גלוטן (בליווי צ'יפס)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card animate__animated animate__zoomIn" onclick="flipCard(this)" style="animation-delay: 0.4s;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=300&h=200&fit=crop" alt="Greek Salad">
+                        <h3>סלט פטה וזיתים</h3>
+                        <p>עגבניות שרי, מלפפונים, זיתים שחורים, בצל סגול וגבינת פטה כבשים.</p>
+                        <div class="price">₪35</div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>סלט יווני</h3>
+                        <div class="explanation"><strong>הסבר:</strong> סלט קלאסי ברוטב ויניגרט לימוני, מרענן וקליל. אפשרות טבעונית ללא גבינה.</div>
+                        <div class="nutrition">
+                            <ul>
+                                <li>צמחוני 🧀</li>
+                                <li>דל פחמימה</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <h2 id="mains" class="section-title mt-5">🥩 מנות עיקריות (Main Courses)</h2>
+        <div class="menu-section">
+            <div class="flip-card animate__animated animate__zoomIn" onclick="flipCard(this)">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://images.unsplash.com/photo-1559863489-389368d30e07?w=300&h=200&fit=crop" alt="Shish Kebab">
+                        <h3>קבב טלה בתיבול צירוטי</h3>
+                        <p>שיפודי כבש ובקר מתובלים, צלויים בגריל פחמים.</p>
+                        <div class="price">₪85</div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>קבב טלה</h3>
+                        <div class="explanation"><strong>הסבר:</strong> מוגש עם תוספת לבחירה: אורז מג'דרה, סלט ירקות או צ'יפס.</div>
+                        <div class="nutrition">
+                            <ul>
+                                <li>בשר כבש ובקר</li>
+                                <li>עשיר בברזל</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card animate__animated animate__zoomIn" onclick="flipCard(this)" style="animation-delay: 0.2s;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=300&h=200&fit:crop" alt="Grilled Sea Bream">
+                        <h3>דג דניס שלם אפוי</h3>
+                        <p>דג טרי אפוי בתנור עם שמן זית, לימון ועשבי תיבול ים תיכוניים.</p>
+                        <div class="price">₪95</div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>דניס בגריל</h3>
+                        <div class="explanation"><strong>הסבר:</strong> דג טרי המגיע מהים מדי יום, מוגש עם רוטב איולי בצד.</div>
+                        <div class="nutrition">
+                            <ul>
+                                <li>מכיל אומגה 3</li>
+                                <li>מומלץ ע"י השף</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card animate__animated animate__zoomIn" onclick="flipCard(this)" style="animation-delay: 0.4s;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://images.unsplash.com/photo-1579737152011-85e82b7c62c9?w=300&h=200&fit=crop" alt="Shawarma">
+                        <h3>צלחת שווארמה עוף</h3>
+                        <p>נתחי עוף מתובלים בתיבול עשיר, מוגש עם פיתות וצ'יפס.</p>
+                        <div class="price">₪75</div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>שווארמה עוף</h3>
+                        <div class="explanation"><strong>הסבר:</strong> נתחים עסיסיים על גחלים, מוגש עם טחינה וחמוצים תוצרת בית.</div>
+                        <div class="nutrition">
+                            <ul>
+                                <li>עשיר בחלבון</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 id="desserts" class="section-title mt-5">🍰 קינוחים (Desserts)</h2>
+        <div class="menu-section">
+            <div class="flip-card animate__animated animate__zoomIn" onclick="flipCard(this)">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://images.unsplash.com/photo-1517457912423-7a9121a505b2?w=300&h=200&fit=crop" alt="Baklava">
+                        <h3>בקלאווה פיסטוק</h3>
+                        <p>שכבות דקות של בצק פילו עם סירופ מתוק ואגוזי פיסטוק קלויים.</p>
+                        <div class="price">₪30</div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>בקלאווה</h3>
+                        <div class="explanation"><strong>הסבר:</strong> קינוח מזרח תיכוני קלאסי, מתוק ועשיר. מושלם עם קפה שחור.</div>
+                        <div class="nutrition">
+                            <ul>
+                                <li>צמחוני 🥚</li>
+                                <li>מכיל גלוטן ואגוזים</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card animate__animated animate__zoomIn" onclick="flipCard(this)" style="animation-delay: 0.2s;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://images.unsplash.com/photo-1542170397-59a117b9683e?w=300&h=200&fit:crop" alt="Knafeh">
+                        <h3>כנאפה לוהטת</h3>
+                        <p>שערות קדאיף ממולאות בגבינה מתוקה, מוגש עם סירופ סוכר.</p>
+                        <div class="price">₪35</div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>כנאפה</h3>
+                        <div class="explanation"><strong>הסבר:</strong> מוגש חם מהתנור, המתיקות של הסירופ משתלבת נהדר עם מליחות הגבינה העדינה.</div>
+                        <div class="nutrition">
+                            <ul>
+                                <li>קינוח חלבי 🥛</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <h2 id="drinks" class="section-title mt-5">🍹 שתייה (Drinks)</h2>
+        <div class="menu-section">
+            <div class="flip-card animate__animated animate__zoomIn" onclick="flipCard(this)">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://images.unsplash.com/photo-1588636166547-b847f9f30b91?w=300&h=200&fit=crop" alt="Arak">
+                        <h3>עראק יוקרתי</h3>
+                        <p>משקה אניס מסורתי, מוגש בכוסות גבוהות עם קרח ומים קרים.</p>
+                        <div class="price">₪28</div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>עראק</h3>
+                        <div class="explanation"><strong>הסבר:</strong> משקה חזק ומרענן שמתאים במיוחד לצד מנות בשר על האש.</div>
+                        <div class="nutrition">
+                            <ul>
+                                <li>משקה אלכוהולי 🍸</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card animate__animated animate__zoomIn" onclick="flipCard(this)" style="animation-delay: 0.2s;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://images.unsplash.com/photo-1549721839-588ce33d4554?w=300&h=200&fit=crop" alt="Lemonade">
+                        <h3>לימונדה טרייה</h3>
+                        <p>מיץ לימון סחוט במקום עם נענע רעננה.</p>
+                        <div class="price">₪15</div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>לימונדה ביתית</h3>
+                        <div class="explanation"><strong>הסבר:</strong> משקה הקיץ המושלם. ניתן לבקש ללא סוכר.</div>
+                        <div class="nutrition">
+                            <ul>
+                                <li>מרענן במיוחד 🧊</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <h2 class="section-title" style="color: #F5F5DC; border-bottom-color: #F5F5DC;">
+            <i class="fas fa-map-marker-alt"></i> צרו קשר
+        </h2>
+        <div class="contact-info">
+            <p><i class="fas fa-phone-alt"></i> **טלפון להזמנות:** 03-1234567</p>
+            <p><i class="fas fa-envelope"></i> **מייל:** info@tziruti.com</p>
+            <p><i class="fas fa-map-marked-alt"></i> **כתובת:** רחוב הזיתים 18, תל אביב</p>
+            <p><i class="fas fa-clock"></i> **שעות פתיחה:** א'-ה' 12:00-23:00 | ו' 10:00-15:00</p>
+        </div>
+        <div style="margin-top: 15px;">
+            <a href="https://facebook.com/tziruti" target="_blank" style="color: #F5F5DC; margin: 0 10px;"><i class="fab fa-facebook-square fa-2x"></i></a>
+            <a href="https://instagram.com/tziruti" target="_blank" style="color: #F5F5DC; margin: 0 10px;"><i class="fab fa-instagram-square fa-2x"></i></a>
+        </div>
+        <p style="margin-top: 20px; font-size: 0.8em;">&copy; 2025 Tziruti. כל הזכויות שמורות.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // פונקציה להפיכת כרטיס המנה
+        function flipCard(card) {
+            card.classList.toggle('flipped');
+        }
+    </script>
+</body>
+</html>

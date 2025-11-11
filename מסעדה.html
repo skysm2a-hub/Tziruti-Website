@@ -1,0 +1,562 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; color: #cbaa65; background-color: #17171a}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; color: #599e60; background-color: #17171a}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; color: #aeb0b7; background-color: #17171a}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Menlo; color: #676b72; background-color: #17171a}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; color: #676b72; background-color: #17171a}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; color: #acacac; background-color: #17171a}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; color: #c37b5a; background-color: #17171a}
+    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; color: #cbaa65; background-color: #17171a; min-height: 16.0px}
+    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Menlo; color: #aeb0b7; background-color: #17171a}
+    span.s1 {color: #acacac}
+    span.s2 {color: #cbaa65}
+    span.s3 {color: #599e60}
+    span.s4 {font: 13.0px Menlo}
+    span.s5 {font: 13.0px Courier; color: #cbaa65}
+    span.s6 {font: 13.0px Courier}
+    span.s7 {color: #aeb0b7}
+    span.s8 {color: #269da9}
+    span.s9 {color: #4795f2}
+    span.s10 {color: #c37b5a}
+    span.s11 {color: #676b72}
+    span.s12 {font: 13.0px Courier; color: #aeb0b7}
+    span.s13 {font: 13.0px Menlo; color: #aeb0b7}
+    span.s14 {font: 13.0px Menlo; color: #676b72}
+    span.s15 {color: #b965ad}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE <span class="s1">html</span>&gt;</p>
+<p class="p2"><span class="s2">&lt;html </span><span class="s1">lang</span>="he" <span class="s1">dir</span>="rtl"<span class="s2">&gt;</span></p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta <span class="s1">charset</span><span class="s3">="UTF-8"</span>&gt;</p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>&lt;meta </span><span class="s1">name</span>="viewport" <span class="s1">content</span>="width=device-width, initial-scale=1.0"<span class="s2">&gt;</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span>&lt;title&gt;</span>Tziruti | <span class="s4">מטבח ים תיכוני</span><span class="s2">&lt;/title&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>&lt;link </span><span class="s1">href</span>="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" <span class="s1">rel</span>="stylesheet"<span class="s2">&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>&lt;link </span><span class="s1">href</span>="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" <span class="s1">rel</span>="stylesheet"<span class="s2">&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>&lt;link </span><span class="s1">rel</span>="stylesheet" <span class="s1">href</span>="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"<span class="s2">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p4"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s6">/* CSS </span>מותאם אישית<span class="s6"> (</span>עיצוב ורספונסיביות<span class="s6">) */</span></p>
+<p class="p5"><span class="Apple-converted-space">        </span><span class="s2">body </span><span class="s7">{</span></p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">font-family</span>: <span class="s3">'Segoe UI'</span>, <span class="s2">Tahoma</span>, <span class="s2">Geneva</span>, <span class="s2">Verdana</span>, <span class="s3">sans-serif</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">background</span>: <span class="s2">linear-gradient</span>(<span class="s8">135</span><span class="s3">deg</span>, <span class="s9">#E0F7FA </span><span class="s8">0</span>%, <span class="s9">#F5F5DC </span><span class="s8">100</span>%);</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">color</span>: <span class="s9">#333</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">overflow-x</span>: <span class="s3">hidden</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">text-align</span>: <span class="s3">right</span>;</p>
+<p class="p3"><span class="Apple-converted-space">        </span>}</p>
+<p class="p3"><span class="Apple-converted-space">        </span>.<span class="s2">navbar </span>{</p>
+<p class="p5"><span class="s7"><span class="Apple-converted-space">            </span></span><span class="s1">background-color</span><span class="s7">: </span><span class="s9">#8FBC8F </span><span class="s10"><b>!important</b></span><span class="s7">; </span>/* Olive green */</p>
+<p class="p5"><span class="Apple-converted-space">            </span><span class="s1">box-shadow</span><span class="s7">: </span><span class="s8">0 4</span><span class="s3">px </span><span class="s8">8</span><span class="s3">px </span><span class="s2">rgba</span><span class="s7">(</span><span class="s8">0</span><span class="s7">,</span><span class="s8">0</span><span class="s7">,</span><span class="s8">0</span><span class="s7">,</span><span class="s8">0.2</span><span class="s7">);</span></p>
+<p class="p3"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="s7"><span class="Apple-converted-space">        </span>.</span>navbar-brand<span class="s7">, .</span>nav-link <span class="s7">{</span></p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">color</span>: <span class="s9">#F5F5DC </span><span class="s10"><b>!important</b></span>; <span class="s11">/* Beige */</span></p>
+<p class="p5"><span class="Apple-converted-space">            </span><span class="s1">transition</span><span class="s7">: </span><span class="s3">color </span><span class="s8">0.3</span><span class="s3">s ease</span><span class="s7">;</span></p>
+<p class="p3"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="s7"><span class="Apple-converted-space">        </span>.</span>nav-link<span class="s7">:</span>hover <span class="s7">{</span></p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">color</span>: <span class="s9">#DEB887 </span><span class="s10"><b>!important</b></span>; <span class="s11">/* Burlywood */</span></p>
+<p class="p5"><span class="Apple-converted-space">        </span><span class="s7">}</span></p>
+<p class="p1"><span class="s7"><span class="Apple-converted-space">        </span>.</span>about-section <span class="s7">{</span></p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">text-align</span>: <span class="s3">center</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">padding</span>: <span class="s8">40</span><span class="s3">px </span><span class="s8">20</span><span class="s3">px</span>;</p>
+<p class="p6"><span class="s7"><span class="Apple-converted-space">            </span></span>background-color<span class="s7">: </span><span class="s9">#FFFACD</span><span class="s7">;</span></p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">border-radius</span>: <span class="s8">15</span><span class="s3">px</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">margin-bottom</span>: <span class="s8">30</span><span class="s3">px</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">box-shadow</span>: <span class="s8">0 4</span><span class="s3">px </span><span class="s8">8</span><span class="s3">px </span><span class="s2">rgba</span>(<span class="s8">0</span>,<span class="s8">0</span>,<span class="s8">0</span>,<span class="s8">0.1</span>);</p>
+<p class="p3"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="s7"><span class="Apple-converted-space">        </span>.</span>about-section h2 <span class="s7">{</span></p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">color</span>: <span class="s9">#8FBC8F</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">border-bottom</span>: <span class="s8">2</span><span class="s3">px solid </span><span class="s9">#DEB887</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">padding-bottom</span>: <span class="s8">10</span><span class="s3">px</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">margin-bottom</span>: <span class="s8">20</span><span class="s3">px</span>;</p>
+<p class="p3"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="s7"><span class="Apple-converted-space">        </span>.</span>about-section p <span class="s7">{</span></p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">font-size</span>: <span class="s8">1.1</span><span class="s3">em</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">line-height</span>: <span class="s8">1.6</span>;</p>
+<p class="p3"><span class="Apple-converted-space">        </span>}</p>
+<p class="p3"><span class="Apple-converted-space">        </span>.<span class="s2">hero </span>{</p>
+<p dir="rtl" class="p4"><span class="s12"><span class="Apple-converted-space">            </span></span><span class="s6">/* </span>תמונת רקע גנרית בקישור ציבורי<span class="s6"> */</span></p>
+<p class="p2"><span class="s11"><span class="Apple-converted-space">            </span></span><span class="s1">background</span><span class="s7">: </span><span class="s2">url</span><span class="s7">(</span>'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&amp;h=400&amp;fit=crop'<span class="s7">) </span>center<span class="s7">/</span>cover no-repeat<span class="s7">;</span></p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">height</span>: <span class="s8">400</span><span class="s3">px</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">display</span>: <span class="s3">flex</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">align-items</span>: <span class="s3">center</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">justify-content</span>: <span class="s3">center</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">color</span>: <span class="s9">#F5F5DC</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">text-shadow</span>: <span class="s8">2</span><span class="s3">px </span><span class="s8">2</span><span class="s3">px </span><span class="s8">4</span><span class="s3">px </span><span class="s2">rgba</span>(<span class="s8">0</span>,<span class="s8">0</span>,<span class="s8">0</span>,<span class="s8">0.7</span>);</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">position</span>: <span class="s3">relative</span>;</p>
+<p class="p3"><span class="Apple-converted-space">        </span>}</p>
+<p class="p3"><span class="Apple-converted-space">        </span>.<span class="s2">hero</span>::<span class="s2">before </span>{</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">content</span>: <span class="s3">''</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">position</span>: <span class="s3">absolute</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">top</span>: <span class="s8">0</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">left</span>: <span class="s8">0</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">right</span>: <span class="s8">0</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">bottom</span>: <span class="s8">0</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">background</span>: <span class="s2">rgba</span>(<span class="s8">47</span>, <span class="s8">79</span>, <span class="s8">79</span>, <span class="s8">0.4</span>);</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">z-index</span>: <span class="s8">1</span>;</p>
+<p class="p3"><span class="Apple-converted-space">        </span>}</p>
+<p class="p3"><span class="Apple-converted-space">        </span>.<span class="s2">hero h1 </span>{</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">font-size</span>: <span class="s8">3</span><span class="s3">em</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">margin</span>: <span class="s8">0</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">z-index</span>: <span class="s8">2</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">position</span>: <span class="s3">relative</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">animation</span>: <span class="s2">fadeInUp </span><span class="s8">2</span><span class="s3">s ease-out</span>;</p>
+<p class="p3"><span class="Apple-converted-space">        </span>}</p>
+<p class="p3"><span class="Apple-converted-space">        </span>.<span class="s2">container </span>{</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">max-width</span>: <span class="s8">1200</span><span class="s3">px</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">margin</span>: <span class="s8">20</span><span class="s3">px auto</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">padding</span>: <span class="s8">20</span><span class="s3">px</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">background</span>: <span class="s2">rgba</span>(<span class="s8">255</span>, <span class="s8">250</span>, <span class="s8">240</span>, <span class="s8">0.95</span>);</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">border-radius</span>: <span class="s8">15</span><span class="s3">px</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">box-shadow</span>: <span class="s8">0 0 20</span><span class="s3">px </span><span class="s2">rgba</span>(<span class="s8">0</span>,<span class="s8">0</span>,<span class="s8">0</span>,<span class="s8">0.1</span>);</p>
+<p class="p3"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="s7"><span class="Apple-converted-space">        </span>.</span>section-title <span class="s7">{</span></p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">color</span>: <span class="s9">#8FBC8F</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">border-bottom</span>: <span class="s8">3</span><span class="s3">px solid </span><span class="s9">#DEB887</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">padding-bottom</span>: <span class="s8">10</span><span class="s3">px</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">margin-bottom</span>: <span class="s8">30</span><span class="s3">px</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">text-align</span>: <span class="s3">center</span>;</p>
+<p class="p3"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="s7"><span class="Apple-converted-space">        </span>.</span>menu-section <span class="s7">{</span></p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">display</span>: <span class="s3">flex</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">flex-wrap</span>: <span class="s3">wrap</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">justify-content</span>: <span class="s3">space-around</span>;</p>
+<p class="p3"><span class="Apple-converted-space">        </span>}</p>
+<p class="p3"><span class="Apple-converted-space">        </span>.<span class="s2">flip-card </span>{</p>
+<p class="p6"><span class="s7"><span class="Apple-converted-space">            </span></span>background-color<span class="s7">: </span><span class="s3">transparent</span><span class="s7">;</span></p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">width</span>: <span class="s8">300</span><span class="s3">px</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">height</span>: <span class="s8">400</span><span class="s3">px</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">perspective</span>: <span class="s8">1000</span><span class="s3">px</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">margin</span>: <span class="s8">15</span><span class="s3">px</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">cursor</span>: <span class="s3">pointer</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">text-align</span>: <span class="s3">right</span>;</p>
+<p class="p3"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="s7"><span class="Apple-converted-space">        </span>.</span>flip-card-inner <span class="s7">{</span></p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">position</span>: <span class="s3">relative</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">width</span>: <span class="s8">100</span>%;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">height</span>: <span class="s8">100</span>%;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">text-align</span>: <span class="s3">center</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">transition</span>: <span class="s2">transform </span><span class="s8">0.8</span><span class="s3">s</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">transform-style</span>: <span class="s3">preserve-3d</span>;</p>
+<p class="p3"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="s7"><span class="Apple-converted-space">        </span>.</span>flip-card<span class="s7">.</span>flipped <span class="s7">.</span>flip-card-inner <span class="s7">{</span></p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">transform</span>: <span class="s2">rotateY</span>(<span class="s8">180</span><span class="s3">deg</span>);</p>
+<p class="p3"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="s7"><span class="Apple-converted-space">        </span>.</span>flip-card-front<span class="s7">, .</span>flip-card-back <span class="s7">{</span></p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">position</span>: <span class="s3">absolute</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">width</span>: <span class="s8">100</span>%;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">height</span>: <span class="s8">100</span>%;</p>
+<p dir="rtl" class="p4"><span class="s12"><span class="Apple-converted-space">            </span></span><span class="s6">/* </span>תמיכה בדפדפנים שונים<span class="s6"> */</span></p>
+<p class="p6"><span class="s11"><span class="Apple-converted-space">            </span></span>-webkit-backface-visibility<span class="s7">: </span><span class="s3">hidden</span><span class="s7">;</span></p>
+<p class="p6"><span class="s7"><span class="Apple-converted-space">            </span></span>backface-visibility<span class="s7">: </span><span class="s3">hidden</span><span class="s7">;</span></p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">border-radius</span>: <span class="s8">15</span><span class="s3">px</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">box-shadow</span>: <span class="s8">0 6</span><span class="s3">px </span><span class="s8">12</span><span class="s3">px </span><span class="s2">rgba</span>(<span class="s8">0</span>,<span class="s8">0</span>,<span class="s8">0</span>,<span class="s8">0.15</span>);</p>
+<p class="p3"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="s7"><span class="Apple-converted-space">        </span>.</span>flip-card-front <span class="s7">{</span></p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">background</span>: <span class="s9">#FFFACD</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">border</span>: <span class="s8">2</span><span class="s3">px solid </span><span class="s9">#DEB887</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">padding</span>: <span class="s8">20</span><span class="s3">px</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">display</span>: <span class="s3">flex</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">flex-direction</span>: <span class="s3">column</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">justify-content</span>: <span class="s3">center</span>;</p>
+<p class="p3"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="s7"><span class="Apple-converted-space">        </span>.</span>flip-card-back <span class="s7">{</span></p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">background</span>: <span class="s9">#FFFACD</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">border</span>: <span class="s8">2</span><span class="s3">px solid </span><span class="s9">#DEB887</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">transform</span>: <span class="s2">rotateY</span>(<span class="s8">180</span><span class="s3">deg</span>);</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">padding</span>: <span class="s8">20</span><span class="s3">px</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">display</span>: <span class="s3">flex</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">flex-direction</span>: <span class="s3">column</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">justify-content</span>: <span class="s3">center</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">overflow-y</span>: <span class="s3">auto</span>;</p>
+<p class="p3"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="s7"><span class="Apple-converted-space">        </span>.</span>flip-card img <span class="s7">{</span></p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">width</span>: <span class="s8">100</span>%;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">height</span>: <span class="s8">150</span><span class="s3">px</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">object-fit</span>: <span class="s3">cover</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">border-radius</span>: <span class="s8">10</span><span class="s3">px</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">margin-bottom</span>: <span class="s8">10</span><span class="s3">px</span>;</p>
+<p class="p3"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="s7"><span class="Apple-converted-space">        </span>.</span>flip-card h3 <span class="s7">{</span></p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">color</span>: <span class="s9">#228B22</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">margin</span>: <span class="s8">10</span><span class="s3">px </span><span class="s8">0</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">text-align</span>: <span class="s3">center</span>;</p>
+<p class="p3"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="s7"><span class="Apple-converted-space">        </span>.</span>flip-card p <span class="s7">{</span></p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">font-size</span>: <span class="s8">0.9</span><span class="s3">em</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">margin</span>: <span class="s8">5</span><span class="s3">px </span><span class="s8">0</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">text-align</span>: <span class="s3">right</span>;</p>
+<p class="p3"><span class="Apple-converted-space">        </span>}</p>
+<p class="p3"><span class="Apple-converted-space">        </span>.<span class="s2">price </span>{</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">font-weight</span>: <span class="s3">bold</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">color</span>: <span class="s9">#CD853F</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">font-size</span>: <span class="s8">1.3</span><span class="s3">em</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">margin-top</span>: <span class="s8">10</span><span class="s3">px</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">text-align</span>: <span class="s3">center</span>;</p>
+<p class="p3"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="s7"><span class="Apple-converted-space">        </span>.</span>ingredients<span class="s7">, .</span>explanation<span class="s7">, .</span>nutrition <span class="s7">{</span></p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">text-align</span>: <span class="s3">right</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">margin</span>: <span class="s8">10</span><span class="s3">px </span><span class="s8">0</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">font-size</span>: <span class="s8">0.85</span><span class="s3">em</span>;</p>
+<p class="p3"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="s7"><span class="Apple-converted-space">        </span>.</span>nutrition ul <span class="s7">{</span></p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">list-style</span>: <span class="s3">none</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">padding</span>: <span class="s8">0</span>;</p>
+<p class="p3"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="s7"><span class="Apple-converted-space">        </span>.</span>nutrition li <span class="s7">{</span></p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">margin</span>: <span class="s8">5</span><span class="s3">px </span><span class="s8">0</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">border-bottom</span>: <span class="s8">1</span><span class="s3">px dotted </span><span class="s9">#ccc</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">padding-bottom</span>: <span class="s8">3</span><span class="s3">px</span>;</p>
+<p class="p3"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="s7"><span class="Apple-converted-space">        </span>.</span>btn-reserve <span class="s7">{</span></p>
+<p class="p6"><span class="s7"><span class="Apple-converted-space">            </span></span>background-color<span class="s7">: </span><span class="s9">#DEB887</span><span class="s7">;</span></p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">color</span>: <span class="s9">#4B0082</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">font-weight</span>: <span class="s3">bold</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">border</span>: <span class="s3">none</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">padding</span>: <span class="s8">10</span><span class="s3">px </span><span class="s8">20</span><span class="s3">px</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">border-radius</span>: <span class="s8">50</span><span class="s3">px</span>;</p>
+<p class="p2"><span class="s7"><span class="Apple-converted-space">            </span></span><span class="s1">transition</span><span class="s7">: </span>background-color <span class="s8">0.3</span>s<span class="s7">, </span><span class="s2">transform </span><span class="s8">0.3</span>s<span class="s7">;</span></p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">margin-top</span>: <span class="s8">15</span><span class="s3">px</span>;</p>
+<p class="p3"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="s7"><span class="Apple-converted-space">        </span>.</span>btn-reserve<span class="s7">:</span>hover <span class="s7">{</span></p>
+<p class="p6"><span class="s7"><span class="Apple-converted-space">            </span></span>background-color<span class="s7">: </span><span class="s9">#CD853F</span><span class="s7">;</span></p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">transform</span>: <span class="s2">scale</span>(<span class="s8">1.05</span>);</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">color</span>: <span class="s9">#4B0082</span>;</p>
+<p class="p3"><span class="Apple-converted-space">        </span>}</p>
+<p class="p3"><span class="Apple-converted-space">        </span><span class="s2">footer </span>{</p>
+<p class="p6"><span class="s7"><span class="Apple-converted-space">            </span></span>background-color<span class="s7">: </span><span class="s9">#8FBC8F</span><span class="s7">;</span></p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">color</span>: <span class="s9">#F5F5DC</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">text-align</span>: <span class="s3">center</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">padding</span>: <span class="s8">30</span><span class="s3">px</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s1">margin-top</span>: <span class="s8">40</span><span class="s3">px</span>;</p>
+<p class="p3"><span class="Apple-converted-space">        </span>}</p>
+<p class="p5"><span class="s7"><span class="Apple-converted-space">        </span></span>/* Media Queries <span class="s4">לרספונסיביות מלאה</span> */</p>
+<p class="p6"><span class="s11"><span class="Apple-converted-space">        </span></span><span class="s10">@media </span><span class="s7">(</span>max-width<span class="s7">: </span><span class="s8">768</span><span class="s3">px</span><span class="s7">) {</span></p>
+<p class="p3"><span class="Apple-converted-space">            </span>.<span class="s2">hero </span>{</p>
+<p class="p3"><span class="Apple-converted-space">                </span><span class="s1">height</span>: <span class="s8">300</span><span class="s3">px</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span>}</p>
+<p class="p3"><span class="Apple-converted-space">            </span>.<span class="s2">hero h1 </span>{</p>
+<p class="p3"><span class="Apple-converted-space">                </span><span class="s1">font-size</span>: <span class="s8">2</span><span class="s3">em</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span>}</p>
+<p class="p3"><span class="Apple-converted-space">            </span>.<span class="s2">flip-card </span>{</p>
+<p class="p3"><span class="Apple-converted-space">                </span><span class="s1">width</span>: <span class="s8">90</span>%;</p>
+<p class="p3"><span class="Apple-converted-space">                </span><span class="s1">margin</span>: <span class="s8">15</span><span class="s3">px auto</span>;</p>
+<p class="p3"><span class="Apple-converted-space">            </span>}</p>
+<p class="p3"><span class="Apple-converted-space">        </span>}</p>
+<p dir="rtl" class="p5"><span class="s7"><span class="Apple-converted-space">        </span></span>/* <span class="s4">אנימציות</span> */</p>
+<p class="p7"><span class="s11"><span class="Apple-converted-space">        </span></span>@keyframes <span class="s2">fadeInUp </span><span class="s7">{</span></p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s2">from </span>{ <span class="s1">opacity</span>: <span class="s8">0</span>; <span class="s1">transform</span>: <span class="s2">translateY</span>(<span class="s8">30</span><span class="s3">px</span>); }</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s2">to </span>{ <span class="s1">opacity</span>: <span class="s8">1</span>; <span class="s1">transform</span>: <span class="s2">translateY</span>(<span class="s8">0</span>); }</p>
+<p class="p3"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="s7"><span class="Apple-converted-space">        </span></span><span class="s10">@keyframes </span>slideInDown <span class="s7">{</span></p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s2">from </span>{ <span class="s1">transform</span>: <span class="s2">translateY</span>(-<span class="s8">100</span>%); }</p>
+<p class="p3"><span class="Apple-converted-space">            </span><span class="s2">to </span>{ <span class="s1">transform</span>: <span class="s2">translateY</span>(<span class="s8">0</span>); }</p>
+<p class="p3"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="s7"><span class="Apple-converted-space">    </span></span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><span class="s2">&lt;nav </span><span class="s1">class</span>="navbar navbar-expand-lg sticky-top"<span class="s2">&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>&lt;div </span><span class="s1">class</span>="container-fluid"<span class="s2">&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>&lt;a </span><span class="s1">class</span>="navbar-brand animate__animated animate__bounce" <span class="s1">href</span>="#"<span class="s2">&gt;&lt;i </span><span class="s1">class</span>="fas fa-utensils"<span class="s2">&gt;&lt;/i&gt; </span><span class="s13">צירוטי </span><span class="s7">| Tziruti</span><span class="s2">&lt;/a&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>&lt;button </span><span class="s1">class</span>="navbar-toggler" <span class="s1">type</span>="button" <span class="s1">data-bs-toggle</span>="collapse" <span class="s1">data-bs-target</span>="#navbarNav" <span class="s1">aria-controls</span>="navbarNav" <span class="s1">aria-expanded</span>="false" <span class="s1">aria-label</span>="Toggle navigation"<span class="s2">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span <span class="s1">class</span><span class="s3">="navbar-toggler-icon"</span>&gt;&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/button&gt;</p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>&lt;div </span><span class="s1">class</span>="collapse navbar-collapse" <span class="s1">id</span>="navbarNav"<span class="s2">&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">            </span>&lt;ul </span><span class="s1">class</span>="navbar-nav ms-auto"<span class="s2">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li <span class="s1">class</span><span class="s3">="nav-item"</span>&gt;</p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">                    </span>&lt;a </span><span class="s1">class</span>="nav-link" <span class="s1">href</span>="#about"<span class="s2">&gt;&lt;i </span><span class="s1">class</span>="fas fa-info-circle"<span class="s2">&gt;&lt;/i&gt; </span><span class="s13">אודות</span><span class="s2">&lt;/a&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li <span class="s1">class</span><span class="s3">="nav-item"</span>&gt;</p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">                    </span>&lt;a </span><span class="s1">class</span>="nav-link" <span class="s1">href</span>="#appetizers"<span class="s2">&gt;&lt;i </span><span class="s1">class</span>="fas fa-seedling"<span class="s2">&gt;&lt;/i&gt; </span><span class="s13">ראשונות</span><span class="s2">&lt;/a&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li <span class="s1">class</span><span class="s3">="nav-item"</span>&gt;</p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">                    </span>&lt;a </span><span class="s1">class</span>="nav-link" <span class="s1">href</span>="#mains"<span class="s2">&gt;&lt;i </span><span class="s1">class</span>="fas fa-drumstick-bite"<span class="s2">&gt;&lt;/i&gt; </span><span class="s13">עיקריות</span><span class="s2">&lt;/a&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li <span class="s1">class</span><span class="s3">="nav-item"</span>&gt;</p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">                    </span>&lt;a </span><span class="s1">class</span>="nav-link" <span class="s1">href</span>="#desserts"<span class="s2">&gt;&lt;i </span><span class="s1">class</span>="fas fa-ice-cream"<span class="s2">&gt;&lt;/i&gt; </span><span class="s13">קינוחים</span><span class="s2">&lt;/a&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li <span class="s1">class</span><span class="s3">="nav-item"</span>&gt;</p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">                    </span>&lt;a </span><span class="s1">class</span>="nav-link" <span class="s1">href</span>="#drinks"<span class="s2">&gt;&lt;i </span><span class="s1">class</span>="fas fa-glass-cheers"<span class="s2">&gt;&lt;/i&gt; </span><span class="s13">שתייה</span><span class="s2">&lt;/a&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li <span class="s1">class</span><span class="s3">="nav-item"</span>&gt;</p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">                    </span>&lt;a </span><span class="s1">class</span>="nav-link" <span class="s1">href</span>="#contact"<span class="s2">&gt;&lt;i </span><span class="s1">class</span>="fas fa-map-marker-alt"<span class="s2">&gt;&lt;/i&gt; </span><span class="s13">צור קשר</span><span class="s2">&lt;/a&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/nav&gt;</p>
+<p class="p8"><br></p>
+<p class="p2"><span class="s2">&lt;div </span><span class="s1">class</span>="hero"<span class="s2">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div&gt;</p>
+<p class="p9"><span class="s5"><span class="Apple-converted-space">        </span>&lt;h1&gt;</span>ברוכים הבאים לצירוטי<span class="s5">&lt;/h1&gt;</span></p>
+<p class="p9"><span class="s5"><span class="Apple-converted-space">        </span>&lt;p&gt;</span>חוויה ים תיכונית קסומה<span class="s6">. </span>טריות<span class="s6">, </span>פשטות ואהבה בכל מנה<span class="s6">.</span><span class="s5">&lt;/p&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div <span class="s1">class</span><span class="s3">="text-center"</span>&gt;</p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">            </span>&lt;a </span><span class="s1">href</span>="mailto:reserve@tziruti.com" <span class="s1">class</span>="btn btn-reserve animate__animated animate__pulse animate__infinite"<span class="s2">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;i <span class="s1">class</span><span class="s3">="fas fa-calendar-alt"</span>&gt;&lt;/i&gt; <span class="s13">הזמן שולחן</span></p>
+<p class="p9"><span class="Apple-converted-space">            </span><span class="s5">&lt;/a&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p8"><br></p>
+<p class="p2"><span class="s2">&lt;div </span><span class="s1">class</span>="container"<span class="s2">&gt;</span></p>
+<p class="p8"><br></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>&lt;div </span><span class="s1">id</span>="about" <span class="s1">class</span>="about-section animate__animated animate__fadeInUp"<span class="s2">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;<span class="s13">✨ אודות צירוטי</span>&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;</p>
+<p dir="rtl" class="p9"><span class="s5"><span class="Apple-converted-space">            </span></span>מסעדת <span class="s6">**</span>צירוטי<span class="s6">** </span>היא חלון לטעמים האותנטיים של הים התיכון<span class="s6">. </span>אנו מאמינים בשימוש בחומרי גלם מקומיים<span class="s6">, </span>טריים ובאיכות הגבוהה ביותר<span class="s6">, </span>שנקנים מדי יום מהשווקים<span class="s6">.</span></p>
+<p dir="rtl" class="p9"><span class="s6"><span class="Apple-converted-space">            </span></span>מכלים מטבחים כמו יוון<span class="s6">, </span>איטליה<span class="s6">, </span>המזרח התיכון וישראל<span class="s6">, </span>יצרנו תפריט שמחבר בין מסורת לחדשנות<span class="s6">. </span>בואו ליהנות מחוויה חמה<span class="s6">, </span>משפחתית וטעמים שלא ישכחו<span class="s6">.</span></p>
+<p class="p3"><span class="Apple-converted-space">        </span><span class="s2">&lt;/p&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p8"><br></p>
+<p class="p8"><br></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>&lt;h2 </span><span class="s1">id</span>="appetizers" <span class="s1">class</span>="section-title"<span class="s2">&gt;</span><span class="s13">🥗 מנות ראשונות </span><span class="s7">(Appetizers)</span><span class="s2">&lt;/h2&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>&lt;div </span><span class="s1">class</span>="menu-section"<span class="s2">&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>&lt;div </span><span class="s1">class</span>="flip-card animate__animated animate__zoomIn" <span class="s1">onclick</span>="<span class="s9">flipCard</span><span class="s7">(</span><span class="s10">this</span><span class="s7">)</span>"<span class="s2">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div <span class="s1">class</span><span class="s3">="flip-card-inner"</span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div <span class="s1">class</span><span class="s3">="flip-card-front"</span>&gt;</p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">                    </span>&lt;img </span><span class="s1">src</span>="https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?w=300&amp;h=200&amp;fit=crop" <span class="s1">alt</span>="Hummus"<span class="s2">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;<span class="s13">חומוס ביתי</span>&lt;/h3&gt;</p>
+<p class="p9"><span class="s5"><span class="Apple-converted-space">                    </span>&lt;p&gt;</span>חומוס קרמי עם טחינה<span class="s6">, </span>שמן זית<span class="s6">, </span>פטרוזיליה וגרגירים חמים<span class="s6">.</span><span class="s5">&lt;/p&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div <span class="s1">class</span><span class="s3">="price"</span>&gt;<span class="s13">₪</span><span class="s7">25</span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div <span class="s1">class</span><span class="s3">="flip-card-back"</span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;<span class="s13">חומוס</span>&lt;/h3&gt;</p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">                    </span>&lt;div </span><span class="s1">class</span><span class="s3">="explanation"</span><span class="s2">&gt;&lt;strong&gt;</span><span class="s4">הסבר</span>:<span class="s2">&lt;/strong&gt; </span><span class="s4">מנה יום</span>-<span class="s4">יומית טחונה במקום</span>. <span class="s4">מוגש עם פיתה חמה וטרייה</span>.<span class="s2">&lt;/div&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div <span class="s1">class</span><span class="s3">="nutrition"</span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;<span class="s13">טבעוני 🌱</span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;<span class="s13">עשיר בחלבון</span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>&lt;div </span><span class="s1">class</span>="flip-card animate__animated animate__zoomIn" <span class="s1">onclick</span>="<span class="s9">flipCard</span><span class="s7">(</span><span class="s10">this</span><span class="s7">)</span>" <span class="s1">style</span>="<span class="s1">animation-delay</span><span class="s7">: </span><span class="s8">0.2</span>s<span class="s7">;</span>"<span class="s2">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div <span class="s1">class</span><span class="s3">="flip-card-inner"</span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div <span class="s1">class</span><span class="s3">="flip-card-front"</span>&gt;</p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">                    </span>&lt;img </span><span class="s1">src</span>="https://images.unsplash.com/photo-1593001874117-c99c800e3eb7?w=300&amp;h=200&amp;fit=crop" <span class="s1">alt</span>="Falafel"<span class="s2">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;<span class="s13">פלאפל ירוק</span>&lt;/h3&gt;</p>
+<p class="p9"><span class="s5"><span class="Apple-converted-space">                    </span>&lt;p&gt;</span>כדורי חומוס מתובלים ומטוגנים<span class="s6">, </span>מוגש עם טחינה וסלסה חריפה<span class="s6">.</span><span class="s5">&lt;/p&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div <span class="s1">class</span><span class="s3">="price"</span>&gt;<span class="s13">₪</span><span class="s7">30</span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div <span class="s1">class</span><span class="s3">="flip-card-back"</span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;<span class="s13">פלאפל</span>&lt;/h3&gt;</p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">                    </span>&lt;div </span><span class="s1">class</span><span class="s3">="explanation"</span><span class="s2">&gt;&lt;strong&gt;</span><span class="s4">הסבר</span>:<span class="s2">&lt;/strong&gt; </span><span class="s4">עשוי מחומוס ופטרוזיליה טרייה </span>- <span class="s4">קריספי מבחוץ ורך מבפנים</span>. 6 <span class="s4">יחידות</span>.<span class="s2">&lt;/div&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div <span class="s1">class</span><span class="s3">="nutrition"</span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;<span class="s13">טבעוני 🌱</span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;<span class="s13">ללא גלוטן </span><span class="s7">(</span><span class="s13">בליווי צ</span><span class="s7">'</span><span class="s13">יפס</span><span class="s7">)</span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>&lt;div </span><span class="s1">class</span>="flip-card animate__animated animate__zoomIn" <span class="s1">onclick</span>="<span class="s9">flipCard</span><span class="s7">(</span><span class="s10">this</span><span class="s7">)</span>" <span class="s1">style</span>="<span class="s1">animation-delay</span><span class="s7">: </span><span class="s8">0.4</span>s<span class="s7">;</span>"<span class="s2">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div <span class="s1">class</span><span class="s3">="flip-card-inner"</span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div <span class="s1">class</span><span class="s3">="flip-card-front"</span>&gt;</p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">                    </span>&lt;img </span><span class="s1">src</span>="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=300&amp;h=200&amp;fit=crop" <span class="s1">alt</span>="Greek Salad"<span class="s2">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;<span class="s13">סלט פטה וזיתים</span>&lt;/h3&gt;</p>
+<p class="p9"><span class="s5"><span class="Apple-converted-space">                    </span>&lt;p&gt;</span>עגבניות שרי<span class="s6">, </span>מלפפונים<span class="s6">, </span>זיתים שחורים<span class="s6">, </span>בצל סגול וגבינת פטה כבשים<span class="s6">.</span><span class="s5">&lt;/p&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div <span class="s1">class</span><span class="s3">="price"</span>&gt;<span class="s13">₪</span><span class="s7">35</span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div <span class="s1">class</span><span class="s3">="flip-card-back"</span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;<span class="s13">סלט יווני</span>&lt;/h3&gt;</p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">                    </span>&lt;div </span><span class="s1">class</span><span class="s3">="explanation"</span><span class="s2">&gt;&lt;strong&gt;</span><span class="s4">הסבר</span>:<span class="s2">&lt;/strong&gt; </span><span class="s4">סלט קלאסי ברוטב ויניגרט לימוני</span>, <span class="s4">מרענן וקליל</span>. <span class="s4">אפשרות טבעונית ללא גבינה</span>.<span class="s2">&lt;/div&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div <span class="s1">class</span><span class="s3">="nutrition"</span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;<span class="s13">צמחוני 🧀</span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;<span class="s13">דל פחמימה</span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p8"><br></p>
+<p class="p8"><br></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>&lt;h2 </span><span class="s1">id</span>="mains" <span class="s1">class</span>="section-title mt-5"<span class="s2">&gt;</span><span class="s13">🥩 מנות עיקריות </span><span class="s7">(Main Courses)</span><span class="s2">&lt;/h2&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>&lt;div </span><span class="s1">class</span>="menu-section"<span class="s2">&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>&lt;div </span><span class="s1">class</span>="flip-card animate__animated animate__zoomIn" <span class="s1">onclick</span>="<span class="s9">flipCard</span><span class="s7">(</span><span class="s10">this</span><span class="s7">)</span>"<span class="s2">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div <span class="s1">class</span><span class="s3">="flip-card-inner"</span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div <span class="s1">class</span><span class="s3">="flip-card-front"</span>&gt;</p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">                    </span>&lt;img </span><span class="s1">src</span>="https://images.unsplash.com/photo-1559863489-389368d30e07?w=300&amp;h=200&amp;fit=crop" <span class="s1">alt</span>="Shish Kebab"<span class="s2">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;<span class="s13">קבב טלה בתיבול צירוטי</span>&lt;/h3&gt;</p>
+<p class="p9"><span class="s5"><span class="Apple-converted-space">                    </span>&lt;p&gt;</span>שיפודי כבש ובקר מתובלים<span class="s6">, </span>צלויים בגריל פחמים<span class="s6">.</span><span class="s5">&lt;/p&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div <span class="s1">class</span><span class="s3">="price"</span>&gt;<span class="s13">₪</span><span class="s7">85</span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div <span class="s1">class</span><span class="s3">="flip-card-back"</span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;<span class="s13">קבב טלה</span>&lt;/h3&gt;</p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">                    </span>&lt;div </span><span class="s1">class</span><span class="s3">="explanation"</span><span class="s2">&gt;&lt;strong&gt;</span><span class="s4">הסבר</span>:<span class="s2">&lt;/strong&gt; </span><span class="s4">מוגש עם תוספת לבחירה</span>: <span class="s4">אורז מג</span>'<span class="s4">דרה</span>, <span class="s4">סלט ירקות או צ</span>'<span class="s4">יפס</span>.<span class="s2">&lt;/div&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div <span class="s1">class</span><span class="s3">="nutrition"</span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;<span class="s13">בשר כבש ובקר</span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;<span class="s13">עשיר בברזל</span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>&lt;div </span><span class="s1">class</span>="flip-card animate__animated animate__zoomIn" <span class="s1">onclick</span>="<span class="s9">flipCard</span><span class="s7">(</span><span class="s10">this</span><span class="s7">)</span>" <span class="s1">style</span>="<span class="s1">animation-delay</span><span class="s7">: </span><span class="s8">0.2</span>s<span class="s7">;</span>"<span class="s2">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div <span class="s1">class</span><span class="s3">="flip-card-inner"</span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div <span class="s1">class</span><span class="s3">="flip-card-front"</span>&gt;</p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">                    </span>&lt;img </span><span class="s1">src</span>="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=300&amp;h=200&amp;fit:crop" <span class="s1">alt</span>="Grilled Sea Bream"<span class="s2">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;<span class="s13">דג דניס שלם אפוי</span>&lt;/h3&gt;</p>
+<p class="p9"><span class="s5"><span class="Apple-converted-space">                    </span>&lt;p&gt;</span>דג טרי אפוי בתנור עם שמן זית<span class="s6">, </span>לימון ועשבי תיבול ים תיכוניים<span class="s6">.</span><span class="s5">&lt;/p&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div <span class="s1">class</span><span class="s3">="price"</span>&gt;<span class="s13">₪</span><span class="s7">95</span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div <span class="s1">class</span><span class="s3">="flip-card-back"</span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;<span class="s13">דניס בגריל</span>&lt;/h3&gt;</p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">                    </span>&lt;div </span><span class="s1">class</span><span class="s3">="explanation"</span><span class="s2">&gt;&lt;strong&gt;</span><span class="s4">הסבר</span>:<span class="s2">&lt;/strong&gt; </span><span class="s4">דג טרי המגיע מהים מדי יום</span>, <span class="s4">מוגש עם רוטב איולי בצד</span>.<span class="s2">&lt;/div&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div <span class="s1">class</span><span class="s3">="nutrition"</span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;<span class="s13">מכיל אומגה </span><span class="s7">3</span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;<span class="s13">מומלץ ע</span><span class="s7">"</span><span class="s13">י השף</span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>&lt;div </span><span class="s1">class</span>="flip-card animate__animated animate__zoomIn" <span class="s1">onclick</span>="<span class="s9">flipCard</span><span class="s7">(</span><span class="s10">this</span><span class="s7">)</span>" <span class="s1">style</span>="<span class="s1">animation-delay</span><span class="s7">: </span><span class="s8">0.4</span>s<span class="s7">;</span>"<span class="s2">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div <span class="s1">class</span><span class="s3">="flip-card-inner"</span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div <span class="s1">class</span><span class="s3">="flip-card-front"</span>&gt;</p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">                    </span>&lt;img </span><span class="s1">src</span>="https://images.unsplash.com/photo-1579737152011-85e82b7c62c9?w=300&amp;h=200&amp;fit=crop" <span class="s1">alt</span>="Shawarma"<span class="s2">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;<span class="s13">צלחת שווארמה עוף</span>&lt;/h3&gt;</p>
+<p class="p9"><span class="s5"><span class="Apple-converted-space">                    </span>&lt;p&gt;</span>נתחי עוף מתובלים בתיבול עשיר<span class="s6">, </span>מוגש עם פיתות וצ<span class="s6">'</span>יפס<span class="s6">.</span><span class="s5">&lt;/p&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div <span class="s1">class</span><span class="s3">="price"</span>&gt;<span class="s13">₪</span><span class="s7">75</span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div <span class="s1">class</span><span class="s3">="flip-card-back"</span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;<span class="s13">שווארמה עוף</span>&lt;/h3&gt;</p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">                    </span>&lt;div </span><span class="s1">class</span><span class="s3">="explanation"</span><span class="s2">&gt;&lt;strong&gt;</span><span class="s4">הסבר</span>:<span class="s2">&lt;/strong&gt; </span><span class="s4">נתחים עסיסיים על גחלים</span>, <span class="s4">מוגש עם טחינה וחמוצים תוצרת בית</span>.<span class="s2">&lt;/div&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div <span class="s1">class</span><span class="s3">="nutrition"</span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;<span class="s13">עשיר בחלבון</span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p8"><br></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>&lt;h2 </span><span class="s1">id</span>="desserts" <span class="s1">class</span>="section-title mt-5"<span class="s2">&gt;</span><span class="s13">🍰 קינוחים </span><span class="s7">(Desserts)</span><span class="s2">&lt;/h2&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>&lt;div </span><span class="s1">class</span>="menu-section"<span class="s2">&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>&lt;div </span><span class="s1">class</span>="flip-card animate__animated animate__zoomIn" <span class="s1">onclick</span>="<span class="s9">flipCard</span><span class="s7">(</span><span class="s10">this</span><span class="s7">)</span>"<span class="s2">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div <span class="s1">class</span><span class="s3">="flip-card-inner"</span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div <span class="s1">class</span><span class="s3">="flip-card-front"</span>&gt;</p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">                    </span>&lt;img </span><span class="s1">src</span>="https://images.unsplash.com/photo-1517457912423-7a9121a505b2?w=300&amp;h=200&amp;fit=crop" <span class="s1">alt</span>="Baklava"<span class="s2">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;<span class="s13">בקלאווה פיסטוק</span>&lt;/h3&gt;</p>
+<p class="p9"><span class="s5"><span class="Apple-converted-space">                    </span>&lt;p&gt;</span>שכבות דקות של בצק פילו עם סירופ מתוק ואגוזי פיסטוק קלויים<span class="s6">.</span><span class="s5">&lt;/p&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div <span class="s1">class</span><span class="s3">="price"</span>&gt;<span class="s13">₪</span><span class="s7">30</span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div <span class="s1">class</span><span class="s3">="flip-card-back"</span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;<span class="s13">בקלאווה</span>&lt;/h3&gt;</p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">                    </span>&lt;div </span><span class="s1">class</span><span class="s3">="explanation"</span><span class="s2">&gt;&lt;strong&gt;</span><span class="s4">הסבר</span>:<span class="s2">&lt;/strong&gt; </span><span class="s4">קינוח מזרח תיכוני קלאסי</span>, <span class="s4">מתוק ועשיר</span>. <span class="s4">מושלם עם קפה שחור</span>.<span class="s2">&lt;/div&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div <span class="s1">class</span><span class="s3">="nutrition"</span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;<span class="s13">צמחוני 🥚</span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;<span class="s13">מכיל גלוטן ואגוזים</span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>&lt;div </span><span class="s1">class</span>="flip-card animate__animated animate__zoomIn" <span class="s1">onclick</span>="<span class="s9">flipCard</span><span class="s7">(</span><span class="s10">this</span><span class="s7">)</span>" <span class="s1">style</span>="<span class="s1">animation-delay</span><span class="s7">: </span><span class="s8">0.2</span>s<span class="s7">;</span>"<span class="s2">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div <span class="s1">class</span><span class="s3">="flip-card-inner"</span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div <span class="s1">class</span><span class="s3">="flip-card-front"</span>&gt;</p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">                    </span>&lt;img </span><span class="s1">src</span>="https://images.unsplash.com/photo-1542170397-59a117b9683e?w=300&amp;h=200&amp;fit:crop" <span class="s1">alt</span>="Knafeh"<span class="s2">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;<span class="s13">כנאפה לוהטת</span>&lt;/h3&gt;</p>
+<p class="p9"><span class="s5"><span class="Apple-converted-space">                    </span>&lt;p&gt;</span>שערות קדאיף ממולאות בגבינה מתוקה<span class="s6">, </span>מוגש עם סירופ סוכר<span class="s6">.</span><span class="s5">&lt;/p&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div <span class="s1">class</span><span class="s3">="price"</span>&gt;<span class="s13">₪</span><span class="s7">35</span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div <span class="s1">class</span><span class="s3">="flip-card-back"</span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;<span class="s13">כנאפה</span>&lt;/h3&gt;</p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">                    </span>&lt;div </span><span class="s1">class</span><span class="s3">="explanation"</span><span class="s2">&gt;&lt;strong&gt;</span><span class="s4">הסבר</span>:<span class="s2">&lt;/strong&gt; </span><span class="s4">מוגש חם מהתנור</span>, <span class="s4">המתיקות של הסירופ משתלבת נהדר עם מליחות הגבינה העדינה</span>.<span class="s2">&lt;/div&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div <span class="s1">class</span><span class="s3">="nutrition"</span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;<span class="s13">קינוח חלבי 🥛</span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p8"><br></p>
+<p class="p8"><br></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>&lt;h2 </span><span class="s1">id</span>="drinks" <span class="s1">class</span>="section-title mt-5"<span class="s2">&gt;</span><span class="s13">🍹 שתייה </span><span class="s7">(Drinks)</span><span class="s2">&lt;/h2&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>&lt;div </span><span class="s1">class</span>="menu-section"<span class="s2">&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>&lt;div </span><span class="s1">class</span>="flip-card animate__animated animate__zoomIn" <span class="s1">onclick</span>="<span class="s9">flipCard</span><span class="s7">(</span><span class="s10">this</span><span class="s7">)</span>"<span class="s2">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div <span class="s1">class</span><span class="s3">="flip-card-inner"</span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div <span class="s1">class</span><span class="s3">="flip-card-front"</span>&gt;</p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">                    </span>&lt;img </span><span class="s1">src</span>="https://images.unsplash.com/photo-1588636166547-b847f9f30b91?w=300&amp;h=200&amp;fit=crop" <span class="s1">alt</span>="Arak"<span class="s2">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;<span class="s13">עראק יוקרתי</span>&lt;/h3&gt;</p>
+<p class="p9"><span class="s5"><span class="Apple-converted-space">                    </span>&lt;p&gt;</span>משקה אניס מסורתי<span class="s6">, </span>מוגש בכוסות גבוהות עם קרח ומים קרים<span class="s6">.</span><span class="s5">&lt;/p&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div <span class="s1">class</span><span class="s3">="price"</span>&gt;<span class="s13">₪</span><span class="s7">28</span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div <span class="s1">class</span><span class="s3">="flip-card-back"</span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;<span class="s13">עראק</span>&lt;/h3&gt;</p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">                    </span>&lt;div </span><span class="s1">class</span><span class="s3">="explanation"</span><span class="s2">&gt;&lt;strong&gt;</span><span class="s4">הסבר</span>:<span class="s2">&lt;/strong&gt; </span><span class="s4">משקה חזק ומרענן שמתאים במיוחד לצד מנות בשר על האש</span>.<span class="s2">&lt;/div&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div <span class="s1">class</span><span class="s3">="nutrition"</span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;<span class="s13">משקה אלכוהולי 🍸</span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>&lt;div </span><span class="s1">class</span>="flip-card animate__animated animate__zoomIn" <span class="s1">onclick</span>="<span class="s9">flipCard</span><span class="s7">(</span><span class="s10">this</span><span class="s7">)</span>" <span class="s1">style</span>="<span class="s1">animation-delay</span><span class="s7">: </span><span class="s8">0.2</span>s<span class="s7">;</span>"<span class="s2">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div <span class="s1">class</span><span class="s3">="flip-card-inner"</span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div <span class="s1">class</span><span class="s3">="flip-card-front"</span>&gt;</p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">                    </span>&lt;img </span><span class="s1">src</span>="https://images.unsplash.com/photo-1549721839-588ce33d4554?w=300&amp;h=200&amp;fit=crop" <span class="s1">alt</span>="Lemonade"<span class="s2">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;<span class="s13">לימונדה טרייה</span>&lt;/h3&gt;</p>
+<p class="p9"><span class="s5"><span class="Apple-converted-space">                    </span>&lt;p&gt;</span>מיץ לימון סחוט במקום עם נענע רעננה<span class="s6">.</span><span class="s5">&lt;/p&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div <span class="s1">class</span><span class="s3">="price"</span>&gt;<span class="s13">₪</span><span class="s7">15</span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div <span class="s1">class</span><span class="s3">="flip-card-back"</span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;<span class="s13">לימונדה ביתית</span>&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div <span class="s1">class</span><span class="s3">="explanation"</span>&gt;&lt;strong&gt;<span class="s13">הסבר</span><span class="s7">:</span>&lt;/strong&gt; <span class="s13">משקה הקיץ המושלם</span><span class="s7">. </span><span class="s13">ניתן לבקש ללא סוכר</span><span class="s7">.</span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div <span class="s1">class</span><span class="s3">="nutrition"</span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;<span class="s13">מרענן במיוחד 🧊</span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p8"><br></p>
+<p class="p2"><span class="s2">&lt;footer </span><span class="s1">id</span>="contact"<span class="s2">&gt;</span></p>
+<p class="p6"><span class="s2"><span class="Apple-converted-space">    </span>&lt;h2 </span>class<span class="s3">="section-title" </span>style<span class="s3">="</span>color<span class="s7">: </span><span class="s9">#F5F5DC</span><span class="s7">; </span>border-bottom-color<span class="s7">: </span><span class="s9">#F5F5DC</span><span class="s7">;</span><span class="s3">"</span><span class="s2">&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>&lt;i </span><span class="s1">class</span>="fas fa-map-marker-alt"<span class="s2">&gt;&lt;/i&gt; </span><span class="s13">צרו קשר</span></p>
+<p class="p1"><span class="s13"><span class="Apple-converted-space">    </span></span>&lt;/h2&gt;</p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>&lt;div </span><span class="s1">class</span>="contact-info"<span class="s2">&gt;</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">        </span>&lt;p&gt;&lt;i </span><span class="s1">class</span><span class="s3">="fas fa-phone-alt"</span><span class="s2">&gt;&lt;/i&gt; </span>**<span class="s4">טלפון להזמנות</span>:** 03-1234567<span class="s2">&lt;/p&gt;</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">        </span>&lt;p&gt;&lt;i </span><span class="s1">class</span><span class="s3">="fas fa-envelope"</span><span class="s2">&gt;&lt;/i&gt; </span>**<span class="s4">מייל</span>:** info@tziruti.com<span class="s2">&lt;/p&gt;</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">        </span>&lt;p&gt;&lt;i </span><span class="s1">class</span><span class="s3">="fas fa-map-marked-alt"</span><span class="s2">&gt;&lt;/i&gt; </span>**<span class="s4">כתובת</span>:** <span class="s4">רחוב הזיתים </span>18, <span class="s4">תל אביב</span><span class="s2">&lt;/p&gt;</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">        </span>&lt;p&gt;&lt;i </span><span class="s1">class</span><span class="s3">="fas fa-clock"</span><span class="s2">&gt;&lt;/i&gt; </span>**<span class="s4">שעות פתיחה</span>:** <span class="s4">א</span>'-<span class="s4">ה</span>' 12:00-23:00 | <span class="s4">ו</span>' 10:00-15:00<span class="s2">&lt;/p&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p6"><span class="s2"><span class="Apple-converted-space">    </span>&lt;div </span>style<span class="s3">="</span>margin-top<span class="s7">: </span><span class="s8">15</span><span class="s3">px</span><span class="s7">;</span><span class="s3">"</span><span class="s2">&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>&lt;a </span><span class="s1">href</span>="https://facebook.com/tziruti" <span class="s1">target</span>="_blank" <span class="s1">style</span>="<span class="s1">color</span><span class="s7">: </span><span class="s9">#F5F5DC</span><span class="s7">; </span><span class="s1">margin</span><span class="s7">: </span><span class="s8">0 10</span>px<span class="s7">;</span>"<span class="s2">&gt;&lt;i </span><span class="s1">class</span>="fab fa-facebook-square fa-2x"<span class="s2">&gt;&lt;/i&gt;&lt;/a&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>&lt;a </span><span class="s1">href</span>="https://instagram.com/tziruti" <span class="s1">target</span>="_blank" <span class="s1">style</span>="<span class="s1">color</span><span class="s7">: </span><span class="s9">#F5F5DC</span><span class="s7">; </span><span class="s1">margin</span><span class="s7">: </span><span class="s8">0 10</span>px<span class="s7">;</span>"<span class="s2">&gt;&lt;i </span><span class="s1">class</span>="fab fa-instagram-square fa-2x"<span class="s2">&gt;&lt;/i&gt;&lt;/a&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span>&lt;p </span><span class="s1">style</span><span class="s3">="</span><span class="s1">margin-top</span>: <span class="s8">20</span><span class="s3">px</span>; <span class="s1">font-size</span>: <span class="s8">0.8</span><span class="s3">em</span>;<span class="s3">"</span><span class="s2">&gt;</span><span class="s9">&amp;copy; </span>2025 Tziruti. <span class="s4">כל הזכויות שמורות</span>.<span class="s2">&lt;/p&gt;</span></p>
+<p class="p1">&lt;/footer&gt;</p>
+<p class="p8"><br></p>
+<p class="p2"><span class="s2">&lt;script </span><span class="s1">src</span>="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"<span class="s2">&gt;&lt;/script&gt;</span></p>
+<p class="p1">&lt;script&gt;</p>
+<p dir="rtl" class="p4"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s6">// </span>פונקציה להפיכת כרטיס המנה</p>
+<p class="p7"><span class="s14"><span class="Apple-converted-space">    </span></span>function <span class="s9">flipCard</span><span class="s7">(card) {</span></p>
+<p class="p3"><span class="Apple-converted-space">        </span>card.<span class="s15">classList</span>.<span class="s9">toggle</span>(<span class="s3">'flipped'</span>);</p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+<p class="p8"><br></p>
+</body>
+</html>
